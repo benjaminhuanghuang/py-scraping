@@ -9,4 +9,5 @@ class TestSpider(scrapy.Spider):
     def parse(self, response):
         title = response.css("span.title::text").get()
         title = response.xpath('//span[@class="title"]/text()').get()
+        xpath = response.xpath()
         return {'title': title}

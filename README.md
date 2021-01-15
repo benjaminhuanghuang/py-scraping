@@ -17,6 +17,8 @@
   
   http://pythonscraping.com/linkedin/ietf.html
 
+  cd ietf_scraper/ietf_scraper/spiders/
+
   scrapy genspider xxx exmaple.com
 ```
 
@@ -25,5 +27,14 @@
    scrapy runspider test.py
 ```
 
+
+## CrawlSpider sample
+```
+  scrapy startproject article_scraper
+
+  cd article_scraper/article_scrapers/spiders/
+
+  scrapy genspider wikipedia en.wikipedia.org
+```
 
 
